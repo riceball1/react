@@ -45,6 +45,29 @@ return (
 
 */
 
+/*
+
+example of getting localStorage
+
+const getLocalStorageData = key => () => {
+  return localStorage.getItem(key);
+}
+
+const Text = ({message}) => <h1>{message}</h1>
+
+.... return (
+  <>
+  ...
+  <DataSource getDataFunc={getLocalStorageData('message')}
+    resourceName='message'>
+      <Text />>
+    </DataSource>
+  </>
+)
+
+
+*/
+
 
 function App() {
   return (
